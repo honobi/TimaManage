@@ -15,7 +15,7 @@ class TimeTableViewCell: UITableViewCell {
     
     func startTimer() {
 
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updataSecond), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(updataSecond), userInfo: nil, repeats: true)
         //调用fire()会立即启动计时器
         timer!.fire()
      }
